@@ -1,0 +1,39 @@
+{
+  "name": "geotiff-precise-no-data",
+  "version": "0.0.0",
+  "description": "Get the Precise No Data Value for a GeoTIFF. Avoid Floating Point Arithmetic Issues.",
+  "main": "geotiff-precise-no-data.js",
+  "types": "geotiff-precise-no-data.d.ts",
+  "files": [
+    "geotiff-precise-no-data.d.ts",
+    "geotiff-precise-no-data.js"
+  ],
+  "scripts": {
+    "f": "npm run format",
+    "format": "npx prettier --trailing-comma=none --write *.js *.ts",
+    "setup": "cd data && ./setup.sh",
+    "test": "npx ts-node -r require-esm-as-empty-object test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoTIFF/geotiff-precise-no-data.git"
+  },
+  "keywords": [
+    "gdal",
+    "geotiff",
+    "nodata",
+    "precise"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/GeoTIFF/geotiff-precise-no-data/issues"
+  },
+  "homepage": "https://github.com/GeoTIFF/geotiff-precise-no-data#readme",
+  "devDependencies": {
+    "flug": "^2.3.1",
+    "geotiff": "^2.0.5",
+    "preciso": "^0.5.0",
+    "require-esm-as-empty-object": "^0.0.1"
+  }
+}
