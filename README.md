@@ -9,7 +9,7 @@ npm install geotiff-precise-no-data
 ## usage
 ```js
 import { fromFile } from "geotiff";
-import getPreciseNoDataValue from "./geotiff-precise-no-data";
+import getPreciseNoDataValue from "geotiff-precise-no-data";
 
 const tif = await fromFile("vestfold.tif");
 const image = await tif.getImage();
